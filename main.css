@@ -1,0 +1,29 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+}
+.contenedor{
+	border: 1px solid black;/*Debe evitarse ponerle largo al padre porque ello sería forzar y se quiere que el padre se ajuste a los hijos*/
+}
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+.cajas{
+	height: 100px;
+	width: 200px;
+	float: left;
+}
+.amarillo{
+	background-color: yellow;
+}
+.azul{
+	background-color: blue;
+}
+.magenta{
+	background-color: magenta;
+}
